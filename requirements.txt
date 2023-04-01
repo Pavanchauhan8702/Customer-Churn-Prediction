@@ -6,3 +6,4 @@ matplotlib
 gunicorn
 Flask
 scikit-learn
+xlrd

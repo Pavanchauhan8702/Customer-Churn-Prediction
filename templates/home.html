@@ -1,0 +1,69 @@
+<
+!DOCTYPE html>
+<html>
+  <head>
+    <title>Customer Churn Prediction</title>
+  </head>
+  <body>
+    <h1>Customer Churn Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+      <label for="gender">Gender:</label><br>
+      <select name="gender" id="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select><br>
+      <label for="SeniorCitizen">SeniorCitizen:</label><br>
+      <select name="SeniorCitizen" id="SeniorCitizen">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select><br>
+      <label for="Partner">Partner:</label><br>
+      <select name="Partner" id="Partner">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select><br>
+      <label for="Dependents">Dependents:</label><br>
+      <select name="Dependents" id="Dependents">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select><br>
+      <label for="tenure">Tenure (months):</label><br>
+      <input type="number" id="tenure" name="tenure" min="0" max="100"><br>
+      <label for="PhoneService">PhoneService:</label><br>
+      <select name="PhoneService" id="PhoneService">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select><br>
+      <label for="MultipleLines">MultipleLines:</label><br>
+      <select name="MultipleLines" id="MultipleLines">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="No phone service">No phone service</option>
+      </select><br>
+      <label for="InternetService">InternetService:</label><br>
+      <select name="InternetService" id="InternetService">
+        <option value="DSL">DSL</option>
+        <option value="Fiber optic">Fiber optic</option>
+        <option value="No">No</option>
+      </select><br>
+      <label for="OnlineSecurity">OnlineSecurity:</label><br>
+      <select name="OnlineSecurity" id="OnlineSecurity">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="No internet service">No internet service</option>
+      </select><br>
+      <label for="OnlineBackup">OnlineBackup:</label><br>
+      <select name="OnlineBackup" id="OnlineBackup">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="No internet service">No internet service</option>
+      </select><br>
+      <label for="DeviceProtection">DeviceProtection:</label><br>
+      <select name="DeviceProtection" id="DeviceProtection">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="No internet service">No internet service</option>
+      </select><br>
+      <label for="TechSupport">TechSupport:</label><br>
+      <select name="TechSupport" id="TechSupport">
+        <
