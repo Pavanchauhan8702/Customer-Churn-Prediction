@@ -2,7 +2,6 @@ import pickle
 from flask import Flask, jsonify, request,app,url_for,render_template
 import numpy as np
 import pandas as pd
-
 app = Flask(__name__)
 #load the model
 model =pickle.load(open('lr_model.pkl','rb'))
